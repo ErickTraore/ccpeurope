@@ -1,0 +1,16 @@
+# Node modules
+**/node_modules/
+
+# Build outputs
+**/build/
+**/dist/
+
+# Logs
+*.log
+
+# Environment files
+**/.env
+
+# Ignorer tous les fichiers upload
+
+**/media-backend/uploads/

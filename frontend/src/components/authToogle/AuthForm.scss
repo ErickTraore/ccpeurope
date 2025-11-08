@@ -1,0 +1,120 @@
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+/* Groupe de champ avec icônes */
+.auth-input-group {
+  position: relative;
+  width: 80%;
+  margin-bottom: 1rem;
+}
+
+/* Icône à gauche (user, lock) */
+.auth-icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  color: #888;
+  font-size: 1rem;
+  pointer-events: none;
+}
+
+/* Champ avec icônes */
+.auth-input.with-icon {
+  padding-left: 2.5rem;
+  padding-right: 2rem;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+/* Icône œil à droite */
+.auth-toggle-visibility {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  color: #888;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: color 0.3s ease;
+}
+
+.auth-toggle-visibility:hover i {
+  color: #007bff;
+}
+
+.auth-toggle-visibility i.visible {
+  color: #007bff;
+}
+
+/* Bouton de soumission */
+.auth-submit {
+  padding: 10px 20px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem;
+  width: 80%;
+}
+
+.auth-submit:hover {
+  background-color: #0056b3;
+}
+
+/* Message d'erreur */
+.error-message {
+  color: #d9534f;
+  font-size: 0.9rem;
+  margin: 0.25rem 0 0.5rem 0;
+  text-align: left;
+  width: 80%;
+}
+
+.input-error {
+  border-color: #d9534f;
+  background-color: #fbeaea;
+}
+
+/* ✅ Groupe checkbox "Se souvenir de moi" */
+.auth-checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 1rem 0;
+  width: 80%;
+}
+
+.auth-checkbox-group input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.auth-checkbox-group label {
+  cursor: pointer;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .auth-input-group,
+  .auth-submit,
+  .error-message,
+  .auth-checkbox-group {
+    width: 100%;
+  }
+}

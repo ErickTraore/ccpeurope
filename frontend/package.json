@@ -1,0 +1,73 @@
+{
+  "name": "ppacieurope-0.6.1",
+  "version": "0.6.1",
+  "private": true,
+  "dependencies": {
+    "@emailjs/browser": "^4.4.1",
+    "@reduxjs/toolkit": "^2.5.0",
+    "@zoom/meetingsdk": "^3.13.2",
+    "add": "^2.0.6",
+    "axios": "^1.7.9",
+    "bcryptjs": "^2.4.3",
+    "buffer": "^6.0.3",
+    "cors": "^2.8.5",
+    "cra-template": "1.2.0",
+    "crypto-browserify": "^3.12.1",
+    "emailjs-com": "^3.2.0",
+    "jwt-decode": "^4.0.0",
+    "mysql": "^2.18.1",
+    "mysql2": "^3.12.0",
+    "navigate": "^0.3.6",
+    "nodemon": "^3.1.10",
+    "ou": "^0.0.2",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.10.7",
+    "react-dom": "^18.2.0",
+    "react-redux": "^9.2.0",
+    "react-router-dom": "^6.22.3",
+    "react-scripts": "^3.0.1",
+    "redux": "^5.0.1",
+    "redux-thunk": "^3.1.0",
+    "sass": "^1.87.0",
+    "sass-loader": "^10.0.1",
+    "web-vitals": "^4.2.4",
+    "yarn": "^1.22.22"
+  },
+  "scripts": {
+    "start": "NODE_OPTIONS=--openssl-legacy-provider react-app-rewired start",
+    "build": "NODE_OPTIONS=--openssl-legacy-provider react-app-rewired build",
+    "test": "react-app-rewired test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "resolutions": {
+    "webpack": "4.42.0"
+  },
+  "devDependencies": {
+    "@onlook/babel-plugin-react": "^2.1.1",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.0",
+    "customize-cra": "^1.0.0",
+    "jest": "^24.9.0",
+    "react-app-rewired": "^2.2.1",
+    "redux-mock-store": "^1.5.5",
+    "web-vitals": "^4.2.4"
+  }
+}

@@ -1,0 +1,235 @@
+.adhesion-admin {
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+
+  h1 {
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    color: #333;
+  }
+
+  .create-user-row {
+    margin-bottom: 1rem;
+
+    button {
+      background-color: #28a745;
+      color: white;
+      padding: 0.6rem 1.2rem;
+      border: none;
+      border-radius: 4px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+
+      &:hover {
+        background-color: #218838;
+      }
+    }
+  }
+
+  .action-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+
+    button {
+      padding: 0.6rem 1.2rem;
+      border: none;
+      border-radius: 4px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+    }
+
+    button.create-btn {
+      background-color: #28a745;
+      color: white;
+
+      &:hover {
+        background-color: #218838;
+      }
+    }
+
+    button.edit-btn {
+      background-color: #fd7e14;
+      color: white;
+
+      &:hover {
+        background-color: #e96b0c;
+      }
+    }
+  }
+
+  .admin-checkbox {
+    display: flex;
+    flex-direction: rown;
+    margin-bottom: 1rem;
+
+    .admin-label {
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+
+    .admin-options {
+      display: flex;
+      gap: 1.5rem;
+
+      label {
+        display: flex;
+        align-items: center;
+        gap: 0.4rem;
+        font-size: 0.95rem;
+      }
+
+      input[type="radio"] {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  .new-user-form {
+    margin-top: 2rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #f9f9f9;
+
+    input[type="email"],
+    input[type="password"] {
+      display: block;
+      width: 100%;
+      margin-bottom: 0.8rem;
+      padding: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    label {
+      display: flex;
+      align-items: baseline;
+      margin-bottom: 1rem;
+
+      input[type="checkbox"] {
+        margin-right: 0.5rem;
+        transform: scale(1.2);
+      }
+    }
+
+    .admin-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 1cm;
+
+      span {
+        font-weight: bold;
+      }
+
+      input[type="checkbox"] {
+        transform: scale(1.2);
+      }
+    }
+
+
+    button {
+      background-color: #28a745;
+      color: white;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 4px;
+      font-weight: bold;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #218838;
+      }
+    }
+  }
+
+  .edit-user-form {
+    margin-top: 2rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #fff3e0;
+
+    input[type="email"],
+    input[type="password"] {
+      display: block;
+      width: 100%;
+      margin-bottom: 0.8rem;
+      padding: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    label {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+
+      input[type="checkbox"] {
+        margin-right: 0.5rem;
+        transform: scale(1.2);
+      }
+    }
+
+    button {
+      background-color: #fd7e14;
+      color: white;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 4px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-right: 0.5rem;
+
+      &:hover {
+        background-color: #e96b0c;
+      }
+
+      &.cancel-btn {
+        background-color: #6c757d;
+
+        &:hover {
+          background-color: #5a6268;
+        }
+      }
+    }
+  }
+
+  .adhesion-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+
+    th,
+    td {
+      border: 1px solid #ddd;
+      padding: 0.75rem;
+      text-align: left;
+    }
+
+    button {
+      padding: 0.4rem 0.8rem;
+      background-color: #fd7e14;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+
+      &:hover {
+        background-color: #e96b0c;
+      }
+
+      &.delete-btn {
+        margin-left: 0.5rem;
+        background-color: #dc3545;
+
+        &:hover {
+          background-color: #c82333;
+        }
+      }
+    }
+  }
+}

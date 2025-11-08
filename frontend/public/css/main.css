@@ -1,0 +1,185 @@
+@charset "UTF-8";
+html,
+body {
+  background: #f1f1f1;
+  font-family: "Merriweather", sans-serif;
+  padding: 0.5em;
+}
+
+.App__header {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: darkblue;
+  justify-content: center;
+  padding: 10px;
+}
+.App__header__logo {
+  width: 20%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.App__header__logo__img {
+  width: 50%;
+  height: auto;
+  display: flex;
+  border: solid 3px white;
+  border-radius: 10px;
+}
+.App__header__panneau {
+  width: 75%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.App__header__panneau__img {
+  width: 80%;
+  height: auto;
+  border: solid 3px white;
+  border-radius: 10px;
+}
+.App__header__actions {
+  width: 10%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.App__header__actions__buttons {
+  width: 100%;
+  height: auto;
+  align-self: flex-start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.App__header__actions__buttons .logout-button {
+  width: 100%;
+  height: auto;
+  font-size: clamp(16px, 4vw, 40px);
+  color: white;
+  cursor: pointer;
+  background-color: darkblue;
+  border: solid 1px darkblue;
+}
+.App__header__actions__hamburger {
+  width: 100%;
+  height: auto;
+  align-self: flex-end;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.App__header__actions__hamburger .hamburger-icon {
+  font-size: clamp(14px, 4vw, 40px);
+  width: auto;
+  height: auto;
+  cursor: pointer;
+  border: none;
+  display: none;
+  border-radius: 4px;
+  background-color: white;
+  color: darkblue;
+}
+.App__header__actions__hamburger .hamburger-icon {
+  display: block;
+}
+
+.menu {
+  display: none;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 100%; /* Assurez-vous que le menu prend toute la largeur */
+  background: #333;
+  z-index: 1000;
+  color: white;
+  list-style: none;
+  padding: 10px;
+  border-radius: 4px;
+  justify-content: center; /* Centre le contenu horizontalement */
+  align-items: center;
+}
+.menu.open {
+  display: flex;
+}
+.menu ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.menu ul li {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.menu ul li:hover {
+  background: #555;
+}
+
+.horizontal-menu {
+  display: flex;
+  background: #333;
+  padding: 10px;
+  margin-top: 16px;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  border: solid 3px white;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.horizontal-menu li {
+  padding: 0 20px;
+  cursor: pointer;
+}
+
+.horizontal-menu li a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.horizontal-menu li:hover {
+  background: #555;
+}
+
+.horizontal-menu {
+  display: none; /* Masquer le menu horizontal sur les petits écrans */
+}
+
+.menu {
+  width: 9rem;
+  position: absolute;
+  flex-direction: column; /* Pour les petits écrans, afficher les éléments en colonne */
+  top: 150px;
+  left: 60px; /* Ajustement pour éviter de chevaucher le logo et le bouton hamburger */
+}
+
+.menu-logo {
+  display: flex; /* S'assurer que le logo est affiché dans le menu hamburger */
+  height: 35px; /* Réduire la taille du logo pour mieux s'adapter */
+  margin-right: 10px; /* Ajout d'un espace entre le logo et l'icône du menu */
+  border-radius: 10px;
+  margin-bottom: 16px;
+}
+
+.logo-and-icon {
+  width: 100%;
+  justify-content: space-around; /* Espace entre le logo et l'icône du menu */
+  padding: 10px;
+}
+
+/* Media Query pour les écrans de taille inférieure à une tablette */
+/* Media Query pour les écrans de taille inférieure à une tablette */
+
+/*# sourceMappingURL=main.css.map */
