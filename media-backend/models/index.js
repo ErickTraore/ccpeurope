@@ -4,14 +4,14 @@ const path = require('path');
 const { Sequelize } = require('sequelize');
 require('dotenv').config();
 
-const env = process.env.NODE_ENV || 'development';
+const env = process.env.NODE_ENV || 'media';
 const configPath = path.join(__dirname, '..', 'config', 'config.js');
 const config = require(configPath)[env];
 
 const sequelize = new Sequelize(config.database, config.username, config.password, {
-  host: config.host,
-  dialect: config.dialect,
-  logging: false,
+    host: config.host,
+    dialect: config.dialect,
+    logging: false,
 });
 
 // Import des modèles
@@ -23,14 +23,13 @@ if (Media.associate) Media.associate({ MediaProfile });
 if (MediaProfile.associate) MediaProfile.associate({ Media });
 
 // Synchronisation automatique
-sequelize.sync({ alter: true })
-  .then(() => console.log('Connexion MEDIA-BACKEND à sa BDD réussie'))
-  .catch(err => console.error('Erreur de synchronisation MEDIA-BACKEND', err));
+sequelize.sync()
+    .then(() => console.log('Connexion MEDIA-BACKEND à sa BDD réussie'))
+    .catch(err => console.error('Erreur de synchronisation MEDIA-BACKEND', err));
 
-  // Export des modèles et de l'instance Sequelize
+// Export des modèles et de l'instance Sequelize
 module.exports = {
-  sequelize,
-  Media,
-  MediaProfile,
+    sequelize,
+    Media,
+    MediaProfile,
 };
-
