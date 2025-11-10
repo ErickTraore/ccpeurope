@@ -1,22 +1,18 @@
-// File: frontend3/user-backend/models/user.js
+module.exports = (sequelize, DataTypes) => {
+    const User = sequelize.define('User', {
+        email: DataTypes.STRING,
+        bio: DataTypes.TEXT,
+        password: DataTypes.STRING,
+        isAdmin: DataTypes.BOOLEAN,
+        lastActivity: {
+            type: DataTypes.DATE,
+            defaultValue: DataTypes.NOW,
+        },
+    });
 
-const { Sequelize } = require('sequelize');
+    User.associate = (models) => {
+        User.hasMany(models.Message, { foreignKey: 'userId' });
+    };
 
-module.exports = (sequelize) => {
-  const User = sequelize.define('User', {
-    email: Sequelize.STRING,
-    bio: Sequelize.TEXT,
-    password: Sequelize.STRING,
-    isAdmin: Sequelize.BOOLEAN,
-    lastActivity: {
-      type: Sequelize.DATE,
-      defaultValue: Sequelize.NOW,
-    },
-  });
-
-  User.associate = (models) => {
-    User.hasMany(models.Message, { foreignKey: 'userId' });
-  };
-
-  return User;
+    return User;
 };

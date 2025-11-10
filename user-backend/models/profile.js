@@ -1,6 +1,5 @@
 // File: user-backend/models/profile.js
 
-const { DataTypes } = require('sequelize');
 
 module.exports = (sequelize, DataTypes) => {
     const Profile = sequelize.define('Profile', {
